@@ -1,18 +1,26 @@
-"""
-Please -> Parans ()
-Excuse -> Exponents **
-My -> Multiplication *
-Dear -> Division /
-Aunt -> Addition +
-Sally -> Subtraction -
+from functools import reduce
 
-8 + 2 * 5 - (9 + 2) ** 2
-8 + 2 * 5 - 11 ** 2
-8 + 2 * 5 - 121
-8 + 10 - 121
--103
-"""
+#  def manual_exponent(num, exp):
+#      computed_list = [num] * exp
+#      return (reduce(lambda total, element: total * element, computed_list))
+#
+#
+#  print(manual_exponent(2, 3))
+#  print(manual_exponent(10, 2))
+#  print(manual_exponent(3, 3))
+#  print(manual_exponent(10, 5))
 
-calculation = 8 + 2 * 5 - (9 + 2) ** 2
+def manual_exponent(num, exp):
+    counter = exp - 1
+    total = num
 
-print(calculation)
+    while counter > 0:
+        total *= num
+        counter -= 1
+
+    return total
+
+print(manual_exponent(2, 3))
+print(manual_exponent(10, 2))
+print(manual_exponent(3, 3))
+print(manual_exponent(10, 5))
