@@ -1,26 +1,17 @@
-from functools import reduce
+# remove elements from a list
+users = ['Kristine', 'Tiffany', 'Jordan', 'Leann']
 
-#  def manual_exponent(num, exp):
-#      computed_list = [num] * exp
-#      return (reduce(lambda total, element: total * element, computed_list))
-#
-#
-#  print(manual_exponent(2, 3))
-#  print(manual_exponent(10, 2))
-#  print(manual_exponent(3, 3))
-#  print(manual_exponent(10, 5))
+print(users)
 
-def manual_exponent(num, exp):
-    counter = exp - 1
-    total = num
+users.remove('Jordan')
 
-    while counter > 0:
-        total *= num
-        counter -= 1
+print(users)
 
-    return total
+popped_user = users.pop()
 
-print(manual_exponent(2, 3))
-print(manual_exponent(10, 2))
-print(manual_exponent(3, 3))
-print(manual_exponent(10, 5))
+print(popped_user)
+print(users)
+
+del users[0]
+
+print(users)
