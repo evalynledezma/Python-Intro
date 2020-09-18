@@ -1,9 +1,18 @@
-word = evalyn
+"""
+Please -> Parans ()
+Excuse -> Exponents **
+My -> Multiplication *
+Dear -> Division /
+Aunt -> Addition +
+Sally -> Subtraction -
 
-def = get word
-if (len(word) < 2):
-  print("Empty String")
-else:
-  print(word[0:2] + word[-2:])
+8 + 2 * 5 - (9 + 2) ** 2
+8 + 2 * 5 - 11 ** 2
+8 + 2 * 5 - 121
+8 + 10 - 121
+-103
+"""
 
-  function_name('argument')
+calculation = 8 + 2 * 5 - (9 + 2) ** 2
+
+print(calculation)

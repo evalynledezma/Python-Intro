@@ -24,7 +24,7 @@ print(sentence)
 sentence = 'the quick brown fox jumped'.title()
 print(sentence)
 
-sentence = 'the Quick Brown fOx jumped'
+sentence = 'the Quick Brown fox jumped'
 print(sentence.lower()) 
 
 
@@ -215,3 +215,5 @@ greeting = 'Hi there'
 
 print(api_data.isnumeric())
 print(greeting.isalpha())
+
+
