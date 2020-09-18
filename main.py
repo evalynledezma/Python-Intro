@@ -1,17 +1,17 @@
-# remove elements from a list
-users = ['Kristine', 'Tiffany', 'Jordan', 'Leann']
+tags = [
+  'python',
+  'development',
+  'tutorials',
+  'code',
+  'programming',
+  'computer science'
+]
 
-print(users)
+tag_range = tags[1:-1:2]
+tag_range = tags[::-1]
 
-users.remove('Jordan')
+print(tag_range)
 
-print(users)
+tags.sort(reverse=True)
 
-popped_user = users.pop()
-
-print(popped_user)
-print(users)
-
-del users[0]
-
-print(users)
+print(tags)
