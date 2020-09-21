@@ -1,17 +1,10 @@
-tags = [
-  'python',
-  'development',
-  'tutorials',
-  'code',
-  'programming',
-  'computer science'
-]
+teams = {
+  "astros": ["Altuve", "Correa", "Bregman"],
+  "angels": ["Trout", "Pujols"],
+  "yankees": ["Judge", "Stanton"],
+  "red sox": ['Price', 'Betts'],
+}
 
-tag_range = tags[1:-1:2]
-tag_range = tags[::-1]
+featured_team = teams.get('yankees', 'No featured team')
 
-print(tag_range)
-
-tags.sort(reverse=True)
-
-print(tags)
+print(featured_team)
