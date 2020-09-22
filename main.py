@@ -1,20 +1,17 @@
-# List: []
-# Dictionary: {}
-# Tuple: ()
+# nums = list(range(1, 100))
 
-# Tuple: immutable 
-# List: mutable
+# while len(nums) > 0:
+#   print(nums.pop())
 
-post = ('Python Basics', 'Intro guide to python', 'Some cool python content')
+def guessing_game():
+  while True:
+    print('What is your guess?')
+    guess = input()
 
-# Tuple unpacking
-title, sub_heading, content = post
+    if guess == '42':
+      print('You correctly guessed it!')
+      return False
+    else:
+      print(f"No, {guess} isn't the answer, please try again\n")
 
-# Equivalent to Tuple unpacking
-# title = post[0]
-# sub_heading = post[1]
-# content = post[2]
-
-print(title)
-print(sub_heading)
-print(content)
+guessing_game()
