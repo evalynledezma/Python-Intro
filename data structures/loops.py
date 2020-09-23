@@ -87,4 +87,75 @@ for cereal in cereals:
 
 
 # while Loop  
- 
+nums = list(range(1, 100))
+
+while len(nums) > 0:
+  print(nums.pop())
+
+def guessing_game():
+  while True:
+    print('What is your guess?')
+    guess = input()
+
+    if guess == '42':
+      print('You correctly guessed it!')
+      return False
+    else:
+      print(f"No, {guess} isn't the answer, please try again\n")
+
+guessing_game()
+
+
+# challenge
+dog = ('tom', 'sam', 'bella', 'thanos')
+
+data = 0
+while data < len(dog):
+  print(dog[data])
+  data = data + 1
+
+
+# combine and flatten lists with for/ in loop
+legacy_customers = ['Alice', 'Bob']
+new_customers = ['Tiffany', 'Kristine']
+
+raw_db = [legacy_customers, new_customers]
+
+print(raw_db)
+
+for legacy_customer in legacy_customers:
+  new_customers.append(legacy_customer)
+
+print(new_customers)
+
+
+# challenge
+numbers = [1,2,3,4,5,6]
+results = []
+
+for number in numbers:
+  results.append(number + 1) 
+
+print(results) 
+
+
+# using list comprehension
+num_list = range(1, 11)
+cubed_nums = []
+
+for num in num_list:
+  cubed_nums.append(num ** 3)
+
+cubed_nums = [num ** 3 for num in num_list]
+
+print(cubed_nums)
+
+even_numbers = []
+
+for num in num_list:
+  if num % 2 == 0:
+    even_numbers.append(num)
+
+even_numbers = [num for num in num_list if num % 2 == 0]
+
+print(even_numbers)
