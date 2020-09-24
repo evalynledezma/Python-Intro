@@ -173,3 +173,29 @@ greeting('Morning',
           third = 'Math homework')
 
 
+# fizzbuzz
+def fizz_buzz(max_num):
+  for num in range(1, max_num + 1):
+    if num % 3 == 0 and num % 5 == 0:
+      print('FizzBuzz')
+    elif num % 5 == 0:
+      print('Buzz')
+    elif num % 3 == 0:
+      print('Fizz')
+    else:
+      print(num)
+
+
+fizz_buzz(100)
+
+
+  
+# remove first and last element from list
+def remove_first_and_last(the_list):
+  _, *content, _ = the_list
+  return content
+list = ['apples', 'bananas', 'grapes']
+
+
+print(remove_first_and_last(list))
+
